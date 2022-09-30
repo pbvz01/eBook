@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="585.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbvz01.app.controller.AuthorizationСontroller">
+   <children>
+      <AnchorPane prefHeight="101.0" prefWidth="892.0" style="-fx-background-color: rgb(27,67,77);">
+         <children>
+            <Label layoutX="86.0" layoutY="33.0" text="The eBook for learning Web-design" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/title-book-img-white.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="810.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/title-avatar-img-white.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="101.0" prefHeight="484.0" prefWidth="892.0">
+         <children>
+            <Label layoutX="200.0" layoutY="81.0" text="Доброго дня! Увійдіть у ваш акаунт">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <VBox layoutX="238.0" layoutY="148.0" prefHeight="275.0" prefWidth="357.0">
+               <children>
+                  <AnchorPane prefHeight="94.0" prefWidth="357.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваш логін:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="login_field" layoutX="121.0" layoutY="57.0" prefHeight="25.0" prefWidth="222.0" promptText="Login" />
+                        <Text fx:id="messageText" layoutX="90.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введіть ваші данні" textAlignment="CENTER" wrappingWidth="177.916015625" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="47.0" prefWidth="357.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" layoutX="24.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваш пароль:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <PasswordField fx:id="password_field" layoutX="121.0" layoutY="1.0" prefHeight="25.0" prefWidth="222.0" promptText="Password" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="75.0" prefWidth="357.0">
+                     <children>
+                        <Button fx:id="createAccountBtn" layoutX="45.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Створити запис" />
+                        <Button fx:id="signUpBtn" layoutX="209.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Увійти" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

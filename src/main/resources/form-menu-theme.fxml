@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="style.css" type="text/css"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="585.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbvz01.app.controller.MenuController">
+    <children>
+        <AnchorPane prefHeight="101.0" prefWidth="924.0" style="-fx-background-color: rgb(27,67,77);">
+            <children>
+                <Label layoutX="86.0" layoutY="33.0" text="The eBook for learning Web-design" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/title-book-img-white.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="icon" fitHeight="58.0" fitWidth="63.0" layoutX="825.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/title-avatar-img-white.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="100.0" prefHeight="483.0" prefWidth="924.0" stylesheets="@style.css">
+         <children>
+            <AnchorPane layoutY="83.0" prefHeight="186.0" prefWidth="924.0" stylesheets="@style.css">
+               <children>
+                  <Button fx:id="topicBtn1" layoutX="51.0" layoutY="130.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="209.0" styleClass="btn-menu" stylesheets="@style.css" text="Автоматизоване створення й підтримка веб-ресурсів " textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+                  <Button fx:id="topicBtn2" disable="true" layoutX="271.0" layoutY="130.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text=" Основи мови HTML">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="topicBtn3" disable="true" layoutX="480.0" layoutY="130.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text="Графіка, аудіо та відео на веб-сторінках" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="topicBtn4" disable="true" layoutX="690.0" layoutY="130.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text="Візуальний редактор веб-сайтів" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="101.0" fitWidth="111.0" layoutX="103.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="93.0" fitWidth="92.0" layoutX="324.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="111.0" layoutX="517.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="101.0" fitWidth="111.0" layoutX="730.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="283.0" prefHeight="200.0" prefWidth="924.0">
+               <children>
+                  <Button fx:id="topicBtn5" disable="true" layoutX="180.0" layoutY="134.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text="Таблиці каскадних стилів і динамічні веб-сайти" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="topicBtn6" disable="true" layoutX="391.0" layoutY="134.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text="Хостинг та популяризація сайтів" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="topicBtn7" disable="true" layoutX="600.0" layoutY="134.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="191.0" styleClass="btn-menu" stylesheets="@style.css" text="Дизайн веб-сайтів " textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="111.0" fitWidth="191.0" layoutX="223.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic5.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="191.0" layoutX="434.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic6.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="111.0" fitWidth="191.0" layoutX="640.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/menu-topic7.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane prefHeight="85.0" prefWidth="924.0">
+               <children>
+                  <Text fx:id="textInfo" layoutX="83.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Доброго дня" wrappingWidth="398.64453125">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

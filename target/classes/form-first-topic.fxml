@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="style.css" type="text/css"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pbvz01.app.controller.FirstTopicController">
+    <children>
+        <AnchorPane prefHeight="101.0" prefWidth="924.0" style="-fx-background-color: rgb(27,67,77);">
+            <children>
+                <Label fx:id="headerText" layoutX="86.0" layoutY="8.0" prefHeight="83.0" prefWidth="474.0" text="The eBook for learning Web-design" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/title-book-img-white.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="icon" fitHeight="58.0" fitWidth="63.0" layoutX="825.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/title-avatar-img-white.png" />
+                    </image>
+                </ImageView>
+            <CheckBox fx:id="checkBox1" layoutX="622.0" layoutY="24.0" mnemonicParsing="false" selected="true" text="12px" textFill="WHITE">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </CheckBox>
+            <CheckBox fx:id="checkBox2" layoutX="675.0" layoutY="24.0" mnemonicParsing="false" text="14px" textFill="WHITE" />
+            <CheckBox fx:id="checkBox3" layoutX="726.0" layoutY="24.0" mnemonicParsing="false" text="16px" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutY="101.0" prefHeight="486.0" prefWidth="924.0">
+         <children>
+            <VBox prefHeight="449.0" prefWidth="213.0" style="-fx-background-color: gray;">
+               <children>
+                  <Button fx:id="btnTopic1" mnemonicParsing="false" prefHeight="42.0" prefWidth="218.0" styleClass="btn-topics" stylesheets="@style.css" text="Основи Інтернету" />
+                  <Button fx:id="btnTopic2" mnemonicParsing="false" prefHeight="42.0" prefWidth="217.0" styleClass="btn-topics" stylesheets="@style.css" text="Передавання даних в Інтернаті" />
+                  <Button fx:id="btnTopic3" mnemonicParsing="false" prefHeight="42.0" prefWidth="224.0" styleClass="btn-topics" stylesheets="@style.css" text="Адресація в Інтернеті" />
+                  <Button fx:id="btnTopic4" mnemonicParsing="false" prefHeight="42.0" prefWidth="223.0" styleClass="btn-topics" stylesheets="@style.css" text="Веб-сторінка та веб-сайт" />
+                  <Button fx:id="btnTopic5" mnemonicParsing="false" prefHeight="42.0" prefWidth="218.0" styleClass="btn-topics" stylesheets="@style.css" text="Домашні сторінки" />
+                  <Button fx:id="btnTopic6" mnemonicParsing="false" prefHeight="42.0" prefWidth="225.0" styleClass="btn-topics" stylesheets="@style.css" text="Структура веб-сайтів" />
+                  <Button fx:id="btnTopic7" mnemonicParsing="false" prefHeight="42.0" prefWidth="221.0" styleClass="btn-topics" stylesheets="@style.css" text="Створення та підтримка веб-ресурсів в автоматизованому режимі" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnTopic8" mnemonicParsing="false" prefHeight="42.0" prefWidth="215.0" styleClass="btn-topics" stylesheets="@style.css" text="Безкоштовний хостинг веб-сайту" />
+                  <Button fx:id="btnTopic9" mnemonicParsing="false" prefHeight="42.0" prefWidth="232.0" styleClass="btn-topics" stylesheets="@style.css" text="Форуми та чати на веб-сайтах" />
+                  <Button fx:id="btnTopic10" mnemonicParsing="false" prefHeight="42.0" prefWidth="223.0" styleClass="btn-topics" stylesheets="@style.css" text="Створення та ведення блогів " />
+               </children>
+            </VBox>
+            <Button fx:id="btnBack" layoutY="434.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="213.0" text="Повернутись до вибору теми" />
+            <TabPane layoutX="213.0" prefHeight="449.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Матеріал">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="711.0">
+                           <children>
+                              <TextArea fx:id="textFieldMaterial" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Ключові слова">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="textFieldKeywords" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" stylesheets="@style.css" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Корисні посилання">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea fx:id="textFieldLinks" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" wrapText="true" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Button fx:id="btnTeacherStart" layoutX="226.0" layoutY="434.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="213.0" text="Розпочати редактування" visible="false" />
+            <Button fx:id="btnTeacherSave" layoutX="683.0" layoutY="434.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="213.0" text="Зберегти зміни" visible="false" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

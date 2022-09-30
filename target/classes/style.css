@@ -1,0 +1,22 @@
+//Style for menu-form
+.btn-menu:hover {
+    -fx-background-color: rgba(27,67,77);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.btn-menu {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+//Style for topic-form
+
+.btn-topics: hover{
+     -fx-background-color: rgba(27,67,77);
+     -fx-text-fill: white;
+}
+
