@@ -39,7 +39,7 @@ public class AuthorizationСontroller {
                 {
                     if(loginUser(login, password))
                     {
-                        UserSession.setActiveUser(user);
+                        UserSession.setInstance(user);
                         FormManager.hideForm(signUpBtn.getScene());
                         FormManager.createNewForm(ControllerConst.MENU_FORM);
                     }

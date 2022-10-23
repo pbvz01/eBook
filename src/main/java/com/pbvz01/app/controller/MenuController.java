@@ -15,7 +15,7 @@ import javafx.scene.text.Text;
 
 public class MenuController
 {
-		private User user = UserSession.getActiveUser();
+		private User user = UserSession.getInstance();
 
 		@FXML
 		private ImageView icon;

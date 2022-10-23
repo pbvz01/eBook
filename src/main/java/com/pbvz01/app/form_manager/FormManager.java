@@ -12,17 +12,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FormManager
-{
-		public static void createNewForm(String fxml)
-		{
+public class FormManager {
+		public static void createNewForm(String fxml) {
 				FXMLLoader loader = new FXMLLoader(App.class.getResource("/" + fxml + ".fxml"));
-				try
-				{
+				try {
 						loader.load();
 				}
-				catch (IOException e)
-				{
+				catch (IOException e) {
 						e.printStackTrace();
 				}
 
@@ -40,13 +36,13 @@ public class FormManager
 		public static void setCorrectTittleIcon (ImageView icon)
 		{
 				String path = String.valueOf(App.class.getResource("/images/title-teach-img-white.png"));
-				if(UserSession.getActiveUser().isTeacher()) {
+				if(UserSession.getInstance().isTeacher()) {
 						icon.setImage(new Image(path));
 				}
 		}
 
 		public static void accessTeacherBtn (Button teacherButton) {
-				if (UserSession.getActiveUser().isTeacher()) {
+				if (UserSession.getInstance().isTeacher()) {
 						teacherButton.setVisible(true);
 				}
 		}

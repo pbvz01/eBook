@@ -1,4 +1,4 @@
-//Style for menu-form
+
 .btn-menu:hover {
     -fx-background-color: rgba(27,67,77);
     -fx-text-fill: white;
@@ -13,10 +13,15 @@
     -fx-text-fill: black;
 }
 
-//Style for topic-form
 
 .btn-topics: hover{
      -fx-background-color: rgba(27,67,77);
      -fx-text-fill: white;
+}
+
+.text-area {
+    -fx-padding: 0 15 0 15;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
 }
 

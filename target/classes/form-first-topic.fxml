@@ -74,7 +74,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="711.0">
                            <children>
-                              <TextArea fx:id="textFieldMaterial" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" wrapText="true" />
+                              <TextArea fx:id="textFieldMaterial" editable="false" layoutX="14.0" layoutY="21.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="381.0" prefWidth="668.0" styleClass="text-area" stylesheets="@style.css" wrapText="true" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -83,7 +83,7 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <TextArea fx:id="textFieldKeywords" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" stylesheets="@style.css" wrapText="true" />
+                              <TextArea fx:id="textFieldKeywords" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" styleClass="text-area" stylesheets="@style.css" wrapText="true" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -92,7 +92,7 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <TextArea fx:id="textFieldLinks" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" wrapText="true" />
+                              <TextArea fx:id="textFieldLinks" editable="false" layoutX="14.0" layoutY="21.0" prefHeight="381.0" prefWidth="668.0" styleClass="text-area" wrapText="true" />
                            </children>
                         </AnchorPane>
                     </content>

@@ -29,13 +29,10 @@ public class RegisterController
 		private PasswordField regPassword_field;
 
 		@FXML
-		void initialize()
-		{
-				formRegisBtn.setOnAction(event ->
-						{
+		void initialize() {
+				formRegisBtn.setOnAction(event -> {
 								boolean check = signUpNewUser();
-								if(check)
-								{
+								if(check) {
 										FormManager.hideForm(formRegisBtn.getScene());
 									   FormManager.createNewForm(ControllerConst.AUTHORIZATION_FORM);
 								}
